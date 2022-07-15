@@ -1,0 +1,12 @@
+certifi
+chardet
+Django==3.2
+djangorestframework
+gunicorn
+idna
+Markdown
+psycopg2
+pycosat
+pytz
+sqlparse
+urllib3
