@@ -37,11 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.staticfiles',
+
     'rest_framework',
     'djoser',
     'rest_framework.authtoken',
-    'django.contrib.staticfiles',
+
     'product.apps.ProductConfig',
+    'user.apps.UserConfig',
+    'social.apps.SocialConfig',
 ]
 
 MIDDLEWARE = [
@@ -152,3 +156,6 @@ DJOSER = {
     'SEND_ACTIVATION_EMAIL': False,
     'SERIALIZERS': {},
 }
+
+
+AUTH_USER_MODEL = 'user.User'
