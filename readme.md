@@ -1,4 +1,4 @@
-# Blogpy
+# Mobo Suggest
 
 ##  Installation
 First **clone** or **download** this project.
