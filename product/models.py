@@ -56,7 +56,7 @@ class Mobile(BaseModel):
     description = models.TextField(verbose_name=_('description'))
     gallery = models.ForeignKey('gallery', verbose_name=_('gallery'), on_delete=models.CASCADE, null=True, blank=True)
     production_date = models.DateField(verbose_name=_('production_date'), )
-    size = models.FloatField(verbose_name=_('size'), )
+    size = models   .FloatField(verbose_name=_('size'), )
     panel = models.PositiveSmallIntegerField(verbose_name=_('panel'), choices=PanelChoices.choices)
     storage = models.PositiveSmallIntegerField(verbose_name=_('storage'), choices=StorageChoices.choices)
     ram = models.PositiveSmallIntegerField(verbose_name=_('ram'), choices=RamChoices.choices)

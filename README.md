@@ -43,6 +43,3 @@ fc6cc9d6d3d7        nginx_nginx         "nginx -g 'daemon of…"   2 hours ago  
 4a183e90a9eb        postgres:10         "docker-entrypoint.s…"   2 hours ago         Up 2 hours          0.0.0.0:5432->5432/tcp   mobo_postgresql
 ```
 **nginx** container as common web server, **mobo** container as django application and **mobo_postgresql** as postgreSQL database container.
-
-## Contributing
-Contributions are  **welcome**  and will be fully  **credited**. I'd be happy to accept PRs for template extending.
