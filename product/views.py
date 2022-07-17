@@ -22,4 +22,9 @@ class SuggestMobileView(ListAPIView):
         if min_date:
             queryset = queryset.filter(production_date__gte=min_date)
 
+        if self.request.user.is_anonymous:
+            return queryset[:1]
+
         return queryset
+
+
