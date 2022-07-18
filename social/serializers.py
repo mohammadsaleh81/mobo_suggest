@@ -2,10 +2,16 @@ from rest_framework import serializers
 from .models import Message
 from rest_framework.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
-from user.models import User
+from user.serializers import UserSerializer
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 
 class MessageSerializer(serializers.ModelSerializer):
+    sender = UserSerializer()
+    receiver = UserSerializer()
+
     class Meta:
         model = Message
         fields = ('id', 'title', 'text', 'receiver', 'sender', 'status')
