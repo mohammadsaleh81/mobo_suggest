@@ -24,6 +24,7 @@ urlpatterns = [
     path('auth/', include('djoser.urls')),
     path('', include('djoser.urls.authtoken')),
     path('product/', include('product.urls')),
+    path('messages/', include('social.urls')),
 
 ]
 
